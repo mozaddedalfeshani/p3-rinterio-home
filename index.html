@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" theme="light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio </title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
 
 
 </head>
-<body>
+<body class="font-manrop">
     <header class="container mx-auto">
         <nav>
             <div class="navbar bg-base-100">
@@ -22,53 +26,54 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
+
+                        <!-- small device show  -->
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            <li class=" text-greyLow"><a>Home</a></li>
+                            <li class=""><a>Portfolio</a></li>
+                            <li class=""><a>Blogs</a></li>
+                            <li class=""><a>Contact Us</a></li>
                         </ul>
                     </div>
+                    <Div>
+
+                    </Div>
                     <a class="btn btn-ghost text-3xl flex justify-center items-center">
-                        <div class="bg-[#ABEF5F]  rounded-xl justify-center items-center"><img class="-rotate-45"
-                                src="./assets/icon/arrow-right.svg">
-                        </div>Rinterio
+                        <div class="bg-[#ABEF5F] h-[32px] w-[32px] rounded-3xl flex  justify-center items-center"><img
+                                class="-rotate-45" src="./assets/icon/arrow-right.svg">
+                        </div>
+                        <p class="lg:text-[32px] font-extrabold">Rinterio</p>
                     </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li>
-                            <!-- <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details> -->
-                            <a>Services</a>
-                        </li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li class="lg:text-[16px] lg:font-bold"><a>Home</a></li>
+
+                        <li class="lg:text-[16px] text-greyLow"><a>Portfolio</a></li>
+                        <li class="lg:text-[16px] text-greyLow"><a>Blogs</a></li>
+                        <li class="lg:text-[16px]  text-greyLow"><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn rounded-3xl">
+                <div class="navbar-end ">
+                    <div class="bg-[#E9E9E9] rounded-3xl p-[2px] mx-2 w-12 h-12 items-center justify-center flex"><img
+                            class=" w-[24px] h-[24px]" src="./assets/icon/search-black.svg"></div>
+                    <div class="bg-[#E9E9E9] rounded-3xl p-[0px] mx-2 w-12 h-12 items-center justify-center flex"><img
+                            class=" w-[24px] h-[24px]" src="./assets/icon/shopping-cart.svg "></div>
+                    <a
+                        class="btn rounded-[32px] w-[212px] h-[56px] p-0 font-extrabold text-[20px] text-black bg-[#ABEF5F]">
 
                         Book Consult
-                        <div class="bg-[#000000] rounded-3xl p-[2px]"><img class="-rotate-45 text-white"
-                                src="./assets/icon/arrow-right-white.svg"></div>
+                        <div class="bg-[#1C1C1C] rounded-3xl p-[2px] w-8 h-8 flex items-center justify-center"><img
+                                class="-rotate-45 text-white" src="./assets/icon/arrow-right-white.svg"></div>
                     </a>
                 </div>
             </div>
         </nav>
+
+        <div class="container">
+
+        </div>
     </header>
     <main></main>
     <fotter></fotter>
