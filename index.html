@@ -14,9 +14,9 @@
 
 </head>
 <body class="font-manrop">
-    <header class="container mx-auto">
+    <header class="container mx-auto ">
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 flex justify-between items-center">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -30,47 +30,71 @@
                         <!-- small device show  -->
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li class=" text-greyLow"><a>Home</a></li>
-                            <li class=""><a>Portfolio</a></li>
-                            <li class=""><a>Blogs</a></li>
-                            <li class=""><a>Contact Us</a></li>
+                            <li class="text-greyLow"><a>Home</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
                         </ul>
                     </div>
 
-
                     <a class="btn btn-ghost text-3xl flex justify-center items-center">
-                        <div class="bg-[#ABEF5F] h-[32px] w-[32px] rounded-3xl flex  justify-center items-center"><img
-                                class="-rotate-45" src="./assets/icon/arrow-right.svg">
+                        <div class="bg-[#ABEF5F] h-[32px] w-[32px] rounded-3xl flex justify-center items-center">
+                            <img class="-rotate-45" src="./assets/icon/arrow-right.svg">
                         </div>
                         <p class="lg:text-[32px] font-extrabold">Rinterio</p>
                     </a>
                 </div>
+
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li class="lg:text-[16px] lg:font-bold"><a>Home</a></li>
-
                         <li class="lg:text-[16px] text-greyLow"><a>Portfolio</a></li>
                         <li class="lg:text-[16px] text-greyLow"><a>Blogs</a></li>
-                        <li class="lg:text-[16px]  text-greyLow"><a>Contact Us</a></li>
+                        <li class="lg:text-[16px] text-greyLow"><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="hidden lg:flex lg:navbar-end ">
-                    <div class="bg-[#E9E9E9] rounded-3xl p-[2px] mx-2 w-12 h-12 items-center justify-center flex"><img
-                            class=" w-[24px] h-[24px]" src="./assets/icon/search-black.svg"></div>
-                    <div class="bg-[#E9E9E9] rounded-3xl p-[0px] mx-2 w-12 h-12 items-center justify-center flex"><img
-                            class=" w-[24px] h-[24px]" src="./assets/icon/shopping-cart.svg "></div>
+
+                <div class="navbar-end hidden lg:flex lg:items-center">
+                    <div class="bg-[#E9E9E9] rounded-3xl p-[2px] mx-2 w-12 h-12 items-center justify-center flex">
+                        <img class="w-[24px] h-[24px]" src="./assets/icon/search-black.svg">
+                    </div>
+                    <div class="bg-[#E9E9E9] rounded-3xl p-[0px] mx-2 w-12 h-12 items-center justify-center flex">
+                        <img class="w-[24px] h-[24px]" src="./assets/icon/shopping-cart.svg">
+                    </div>
                     <a
                         class="btn rounded-[32px] w-[212px] h-[56px] p-0 font-extrabold text-[20px] text-black bg-[#ABEF5F]">
-
                         Book Consult
-                        <div class="bg-[#1C1C1C] rounded-3xl p-[2px] w-8 h-8 flex items-center justify-center"><img
-                                class="-rotate-45 text-white" src="./assets/icon/arrow-right-white.svg"></div>
+                        <div class="bg-[#1C1C1C] rounded-3xl p-[2px] w-8 h-8 flex items-center justify-center">
+                            <img class="-rotate-45 text-white" src="./assets/icon/arrow-right-white.svg">
+                        </div>
                     </a>
                 </div>
             </div>
         </nav>
 
-        <div class="container">
+
+        <div class="container flex flex-col justify-center items-center py-10 mx-auto my-8">
+            <img class="lg:w-[571px] lg:h-[350px] w-[261px]" src="./assets/banner.png" alt="">
+            <h1 class="font-extrabold text-[36px] my-10 px-5 lg:text-6xl text-center lg:h-[174px]">A barn house
+                of
+                this
+                design has
+                a striking
+                appearance</h1>
+            <p class="lg:text-2xl font-medium text-center px-5"> The barn house captivates with its blend of rustic
+                charm and
+                modern
+                sophistication,
+                featuring weathered
+                wood, sleek
+                metal accents, and large windows that flood the space with natural light.</p>
+
+            <a class="btn rounded-[32px] lg:w-[212px] h-[56px] p-0 w-[75%] text-[20px] text-black bg-[#ABEF5F50] my-10">
+
+                View Details
+                <div class="bg-[#ABEF5F] rounded-3xl p-[2px] w-8 h-8 flex items-center justify-center"><img
+                        class="-rotate-45 text-white" src="./assets/icon/arrow-right.svg"></div>
+            </a>
 
         </div>
     </header>
