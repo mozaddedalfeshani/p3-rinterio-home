@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         manrop: ["Manrope", "sans-serif"],
       },
+      backgroundImage: {
+        faqIco: "url('./assetsiconquestion-mark.png')",
+      },
     },
   },
   plugins: [],
