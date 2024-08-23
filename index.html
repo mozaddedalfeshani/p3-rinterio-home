@@ -143,7 +143,7 @@
 
         </div>
     </header>
-    <main>
+    <main class="relative">
 
         <section class="firstBigSection bg-[#f0ecec] py-10">
             <div class="container mx-auto px-4 py-8 lg:py-16">
@@ -441,6 +441,49 @@
 
 
         </section>
+
+
+        <!-- a floting icon  -->
+        <button class="fixed btn right-3 bottom-8 border-black border-[1px] p-2 rounded-2xl backdrop-blur-0 "
+            onclick="showCanvasWind()">
+            <img src="./assets/icon/feedback.png" class="w-[49px] md:w-[64px] backdrop-blur-0  ">
+
+        </button>
+        <!-- function that add class to div  -->
+
+
+        <div class="fixed right-7 bottom-12 border-black border-[1px] p-2 rounded-2xl backdrop-blur-0 mb-3 mx-2 md:max-w-[400px] hidden"
+            id="catchd">
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-100 border mb-1">
+                <div class="collapse-title text-[16px] md:text-xl font-medium">What is Home Design?</div>
+                <div class="collapse-content">
+                    <p>Home design is the process of planning and creating a functional, aesthetically pleasing living
+                        space, involving
+                        architecture, interior layout, furniture placement, and decor choices to ensure comfort, style,
+                        and
+                        practicality for the
+                        occupants.</p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-100 border">
+                <div class="collapse-title text-[16px] md:text-xl font-medium">What is Renterio?</div>
+                <div class="collapse-content">
+                    <p>Renterio company is a business that specializes in creating and planning residential spaces.
+                        These companies
+                        provide services like architectural design, interior design, space planning, and decoration. We
+                        work with clients to
+                        design homes that are functional, aesthetically pleasing, and tailored to the client's needs and
+                        preferences.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            showCanvasWind = () => {
+                let catchd = document.getElementById('catchd')
+                catchd.classList.toggle('hidden')
+                console.log(catchd)
+            }
+        </script>
     </main>
 
 </body>
