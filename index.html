@@ -499,40 +499,36 @@
 
 
         <!-- a floting icon  -->
-        <button class="fixed btn right-3 bottom-8 border-black border-[1px] p-2 rounded-2xl backdrop-blur-0 "
+        <button class="fixed  right-3 bottom-8 border-black border-[1px] p-2 indicator rounded-2xl backdrop-blur-0 "
             onclick="showCanvasWind()">
-            <img src="./assets/icon/feedback.png" class="w-[49px] md:w-[64px] backdrop-blur-0  ">
+            <span class="indicator-item badge badge-primary"></span>
+            <img src="./assets/icon/important-message.png" class="w-[28px] md:w-[32px] backdrop-blur-0  ">
 
         </button>
         <!-- function that add class to div  -->
 
 
-        <div class="fixed right-7 bottom-12 border-black border-[1px] p-2 rounded-2xl backdrop-blur-0 mb-3 mx-2 md:max-w-[400px] hidden"
+        <div class="fixed right-7 bottom-12 border-black border-[1px] p-2 rounded-2xl backdrop-blur-2xl shadow-lg w-[260px] px-1 mx-auto h-[360px] mb-3 md:w-[235px] hidden"
             id="catchd">
-            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-100 border mb-1">
-                <div class="collapse-title text-[16px] md:text-xl font-medium">What is Home Design?</div>
-                <div class="collapse-content">
-                    <p>Home design is the process of planning and creating a functional, aesthetically pleasing living
-                        space, involving
-                        architecture, interior layout, furniture placement, and decor choices to ensure comfort, style,
-                        and
-                        practicality for the
-                        occupants.</p>
+            <div class="indicator">
+
+                <div class=" w-[255px] h-[300px] grid  md:h-[350px] md:w-[230px] place-items-center font-medium ">
+                    <p class="font-bold flex-row flex items-center">Hello <img src="./assets/icon/wave.png"></img></p>
+                    Discover your dream home with
+                    us!
+                    Explore
+                    beautifully crafted homes designed for comfort, style, and lasting value. Our
+                    expert team is here to guide you through every step of the buying process. Start your journey today!
+
+                    <button class="btn btn-primary" onclick="show()">Join our Community</button>
                 </div>
-            </div>
-            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-100 border">
-                <div class="collapse-title text-[16px] md:text-xl font-medium">What is Renterio?</div>
-                <div class="collapse-content">
-                    <p>Renterio company is a business that specializes in creating and planning residential spaces.
-                        These companies
-                        provide services like architectural design, interior design, space planning, and decoration. We
-                        work with clients to
-                        design homes that are functional, aesthetically pleasing, and tailored to the client's needs and
-                        preferences.</p>
-                </div>
+
             </div>
         </div>
         <script>
+            show = () => {
+                alert("Comming Soon !")
+            }
             showCanvasWind = () => {
                 let catchd = document.getElementById('catchd')
                 catchd.classList.toggle('hidden')
